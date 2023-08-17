@@ -59,62 +59,6 @@ const macetas=[{
     precio:900,
 }];
 
-/* const carrito=[];
-
-let categoria=parseInt(prompt("Escriba el numero de la categoria que desea comprar" + "\n 1- Almódones \n 2- Contenedores \n 3- Macetas"));
-
-
-
-if(categoria<=0){
-    alert("el numero ingresado debe ser mayor a 0");
-}else if(!isNaN(categoria)){
-    let listado="";
-    let count=0;
-    let opcion=0;
-    switch(categoria){
-        case 1:
-             almoadones.forEach(element => {
-                count++;
-                listado=listado + count + ". " + element.nombre + " $" + element.precio + "\n";
-            });
-
-            opcion=parseInt(prompt("Escriba el numero de la categoria que desea comprar" + "\n" + listado));
-
-            
-            carrito.push(almoadones[opcion-1]);
-            
-            break;
-        case 2:
-            contenedores.forEach(element => {
-                count++;
-                listado=listado + count + ". " + element.nombre + " $" + element.precio + "\n";
-            });
-
-            opcion=parseInt(prompt("Escriba el numero de la categoria que desea comprar" + "\n" + listado));
-
-           
-            carrito.push(contenedores[opcion-1]);
-            break;
-        case 3:
-            macetas.forEach(element => {
-                count++;
-                listado=listado + count + ". " + element.nombre + " $" + element.precio + "\n";
-            });
-
-            opcion=parseInt(prompt("Escriba el numero de la categoria que desea comprar" + "\n" + listado));
-
-           
-            carrito.push(macetas[opcion-1]);
-            break;
-    }
-
-}else{
-    alert("Solo se admiten los numeros 1, 2 y 3");
-}
-
-console.log(carrito); */
-
-
 const carrito = [];
 
 const producto = [

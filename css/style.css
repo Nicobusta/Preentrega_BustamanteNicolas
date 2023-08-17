@@ -1,0 +1,15 @@
+.nav__principal {
+  background-color: #8B583B;
+}
+.nav__principal img {
+  width: 3rem;
+  height: auto;
+}
+.nav__principal a {
+  color: #fff;
+}
+.nav__principal svg {
+  fill: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */

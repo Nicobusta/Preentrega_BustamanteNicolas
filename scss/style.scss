@@ -1,0 +1,15 @@
+@import './abstract/variables';
+
+.nav__principal {
+    background-color: $colorPrimario;
+    img{
+        width: 3rem;
+        height: auto;
+    }
+    a{
+        color: $colorFont;
+    }
+    svg{
+        fill:$colorFont;
+    }
+}

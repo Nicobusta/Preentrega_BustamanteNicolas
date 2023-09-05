@@ -1,15 +1,205 @@
 @import './abstract/variables';
 
+h1{
+    font-family: $fontTitulo;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.destacados{
+ width: 25vw;
+ aspect-ratio: 1/1;
+ margin:2rem 0;
+ position: relative;
+    a{
+        text-decoration: none;
+        color: black;
+        
+
+        h3{
+            font-family: $fontTitulo;
+            position: absolute;
+            bottom: 10%;
+            width: 100%;
+            text-align: center;
+            padding:0.5rem 0;
+            background-color: rgba($color: #ffffff79, $alpha: 0.5);
+        }
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+
 .nav__principal {
+    
     background-color: $colorPrimario;
     img{
         width: 3rem;
         height: auto;
     }
-    a{
+
+    li a{
         color: $colorFont;
     }
-    svg{
-        fill:$colorFont;
+    
+    a {
+        &:hover{
+            fill: $colorFontSecundario;
+        }
+        svg{
+            fill:$colorFont; 
+            &:hover{
+                fill: $colorFontSecundario;
+            }
+        }
+
+        img:hover{
+            filter: invert(100%); 
+        }
     }
 }
+
+footer{
+    background-color: $colorSecundario;
+    bottom: 0;
+        
+        
+        a{
+            color : $colorFont;
+            list-style: none;
+            text-decoration: none;
+            margin-bottom: 1rem;
+            
+            &:hover{
+            color: $colorFontSecundario;
+                svg{
+                    fill: $colorFontSecundario;
+                }
+            }
+
+            img{
+                width: 5rem;
+
+                &:hover{
+                    filter: invert(100%); 
+                }
+            }
+
+            svg{
+                width: 2rem;
+                fill: $colorFont;
+                margin-right: 0.5rem;
+            }
+        }
+
+        .redes svg{
+            width: 3.5rem;
+        }
+
+        small{
+            color: $colorFont;
+            margin-bottom: 0.5rem;
+        }
+}       
+
+#main__productos{
+    margin-top: 4.5rem;
+        
+        img{
+            
+            width: 100%;
+            aspect-ratio: 4 / 4;
+            object-fit: cover;
+            object-position: center;
+         }
+
+         
+} 
+
+button{
+    background-color: $colorPrimario;
+    border: none;
+    border-radius: 5px;
+    color: $colorFont;
+    padding: 0.5rem;
+ }
+
+.producto{
+    img{   
+        aspect-ratio: 4 / 4;   
+    }
+
+    input{
+        width: 4rem;
+        height: auto;
+        text-align: center;
+        border: 1px 0;
+        cursor:default;
+    }
+
+    svg{
+        width: 1.5rem;
+        height: auto;
+    }
+
+    .modificarCant{
+        background-color: $colorPrimario;
+        width: 1.5rem;
+        text-align: center;
+        color: white;
+        cursor: pointer;
+    }
+
+    #eliminar{
+        background-color: transparent;
+        border: none;
+        svg{
+            fill: rgb(182, 20, 20);
+        }
+    }
+
+}
+
+#main__login{
+    margin-top: 4rem;
+
+    .loginImg{
+        width: 50vw;
+        margin: 0;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+   
+   form{
+        margin:2rem 0;
+        width: 80vw;
+        max-width: 300px;
+
+        fieldset{
+            width: 110%;
+            margin: 1.2rem 0;
+
+            input{
+                border:none;
+                border-bottom: 1px solid $colorPrimario;
+                margin-left:auto;
+                
+            }
+        
+        }
+
+
+
+   }
+
+     
+
+}
+
+
+
+    

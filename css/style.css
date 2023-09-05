@@ -1,3 +1,33 @@
+h1 {
+  font-family: "Cardo", serif;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.destacados {
+  width: 25vw;
+  aspect-ratio: 1/1;
+  margin: 2rem 0;
+  position: relative;
+}
+.destacados a {
+  text-decoration: none;
+  color: black;
+}
+.destacados a h3 {
+  font-family: "Cardo", serif;
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem 0;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.destacados img {
+  width: 100%;
+  height: auto;
+}
+
 .nav__principal {
   background-color: #8B583B;
 }
@@ -5,11 +35,128 @@
   width: 3rem;
   height: auto;
 }
-.nav__principal a {
+.nav__principal li a {
   color: #fff;
 }
-.nav__principal svg {
+.nav__principal a:hover {
+  fill: #000;
+}
+.nav__principal a svg {
   fill: #fff;
+}
+.nav__principal a svg:hover {
+  fill: #000;
+}
+.nav__principal a img:hover {
+  filter: invert(100%);
+}
+
+footer {
+  background-color: #62371E;
+  bottom: 0;
+}
+footer a {
+  color: #fff;
+  list-style: none;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+footer a:hover {
+  color: #000;
+}
+footer a:hover svg {
+  fill: #000;
+}
+footer a img {
+  width: 5rem;
+}
+footer a img:hover {
+  filter: invert(100%);
+}
+footer a svg {
+  width: 2rem;
+  fill: #fff;
+  margin-right: 0.5rem;
+}
+footer .redes svg {
+  width: 3.5rem;
+}
+footer small {
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+#main__productos {
+  margin-top: 4.5rem;
+}
+#main__productos img {
+  width: 100%;
+  aspect-ratio: 4/4;
+  object-fit: cover;
+  object-position: center;
+}
+
+button {
+  background-color: #8B583B;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 0.5rem;
+}
+
+.producto img {
+  aspect-ratio: 4/4;
+}
+.producto input {
+  width: 4rem;
+  height: auto;
+  text-align: center;
+  border: 1px 0;
+  cursor: default;
+}
+.producto svg {
+  width: 1.5rem;
+  height: auto;
+}
+.producto .modificarCant {
+  background-color: #8B583B;
+  width: 1.5rem;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+.producto #eliminar {
+  background-color: transparent;
+  border: none;
+}
+.producto #eliminar svg {
+  fill: rgb(182, 20, 20);
+}
+
+#main__login {
+  margin-top: 4rem;
+}
+#main__login .loginImg {
+  width: 50vw;
+  margin: 0;
+}
+#main__login .loginImg img {
+  width: 100%;
+  height: auto;
+}
+#main__login form {
+  margin: 2rem 0;
+  width: 80vw;
+  max-width: 300px;
+}
+#main__login form fieldset {
+  width: 110%;
+  margin: 1.2rem 0;
+}
+#main__login form fieldset input {
+  border: none;
+  border-bottom: 1px solid #8B583B;
+  margin-left: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

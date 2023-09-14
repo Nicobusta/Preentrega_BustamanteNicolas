@@ -1,4 +1,9 @@
 @import './abstract/variables';
+body{
+    font-family: $fontTitulo;
+    font-size: 18px;
+    
+}
 
 h1{
     font-family: $fontTitulo;
@@ -11,9 +16,18 @@ h1{
  aspect-ratio: 1/1;
  margin:2rem 0;
  position: relative;
+ overflow: hidden;
+
     a{
         text-decoration: none;
         color: black;
+
+        &:hover{
+            img{
+                transition: all 1.5s ease;
+                transform: scale(1.2)
+            }
+        }
         
 
         h3{
@@ -27,6 +41,7 @@ h1{
         }
     }
     img{
+        
         width: 100%;
         height: auto;
     }
@@ -127,6 +142,12 @@ button{
  }
 
 .producto{
+    &:hover{
+        box-shadow: 0px 0px 26px 1px rgba(0,0,0,0.75);
+        padding: 0.5rem;
+        transition: all 0.5s ease;
+    }
+    
     img{   
         aspect-ratio: 4 / 4;   
     }
@@ -150,6 +171,20 @@ button{
         text-align: center;
         color: white;
         cursor: pointer;
+        padding-top: 0.2rem;
+
+    }
+
+    #sumar{
+        border-radius: 0 50% 50% 0;
+    }
+
+    #restar{
+        border-radius: 50% 0 0 50%;
+    }
+
+    .btnComprar:hover, .modificarCant:hover{
+        background: $colorTerciario;
     }
 
     #eliminar{
@@ -200,6 +235,34 @@ button{
 
 }
 
+.conteiner__carrito{
+ 
+    .header__carrito{
+        background-color: $colorPrimario;
+        color: white; 
+        h5{
+            font-size: 1.5rem;
+        }
+    }
 
+    #carrito{
+       .producto{
+            &:hover{
+                box-shadow:none;
+                padding: 0;
+                transition: none;
+            }
+            
+        }
 
+    }
+}
+
+#buscador{
+    position: absolute;
+    right: 12rem;
+    display: none;
+    border: none;
+    border-radius: 5px;
+}
     

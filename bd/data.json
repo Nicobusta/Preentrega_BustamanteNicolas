@@ -1,0 +1,77 @@
+{  "almohadones":[
+      {
+         "codigo":1,
+         "nombre":"Pana",
+         "imagen":"almohadon1.jpg",
+         "cantidad":6,
+         "precio":5600
+      },
+      {
+         "codigo":2,
+         "nombre":"Caribe",
+         "imagen":"almohadon1.jpg",
+         "cantidad":8,
+         "precio":6300
+      },
+      {
+         "codigo":4,
+         "nombre":"Tusor Marrón",
+         "imagen":"almohadon1.jpg",
+         "cantidad":3,
+         "precio":6300
+      }
+   ],
+   "contenedores":[
+      {
+         "codigo":5,
+         "nombre":"Amarrillo Caribe",
+         "imagen":"contenedor.jpg",
+         "cantidad":2,
+         "precio":5600
+      },
+      {
+         "codigo":6,
+         "nombre":"Arpillera",
+         "imagen":"contenedor.jpg",
+         "cantidad":5,
+         "precio":5600
+      },
+      {
+         "codigo":7,
+         "nombre":"Tusor Beige",
+         "imagen":"contenedor.jpg",
+         "cantidad":5,
+         "precio":6300
+      }
+   ],
+   "macetas":[
+      {
+         "codigo":8,
+         "nombre":"Cemento",
+         "imagen":"macetas.jpg",
+         "cantidad":12,
+         "precio":900
+      },
+      {
+         "codigo":9,
+         "nombre":"Hombrecito PET",
+         "imagen":"macetas.jpg",
+         "cantidad":3,
+         "precio":800
+      },
+      {
+         "codigo":10,
+         "nombre":"Robert",
+         "imagen":"macetas.jpg",
+         "cantidad":3,
+         "precio":1700
+      },
+      {
+         "codigo":11,
+         "nombre":"Cuenco de Madera",
+         "imagen":"macetas.jpg",
+         "cantidad":2,
+         "precio":900
+     }
+   ] 
+}

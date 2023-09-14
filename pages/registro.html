@@ -73,32 +73,37 @@
     </header>
 
     <main id="main__login" class="d-flex" >
-      <section class="loginImg">
-        <img src="../assets/fondo.png" alt="">
-      </section>
+      
       <section class="formLogin d-flex flex-column m-auto">
-        <h1 class="text-center">Ingresar a mi cuenta</h1>
+        <h1 class="text-center">Crear tu cuenta</h1>
         <form id="form__login" class="d-flex flex-column align-items-center">
             <fieldset class="d-flex justify-content-center">
+              <label for="name">Nombre: </label>
+              <input type="text" id="name" placeholder="Ingrese su Nombre">  
+            </fieldset>
+            <fieldset class="d-flex justify-content-center">
               <label for="username">Usuario: </label>
-              <input type="text" id="username" placeholder="Ingrese su usuario">  
+              <input type="text" id="username" placeholder="Ingrese su Usuario">  
+            </fieldset>
+            <fieldset class="d-flex justify-content-center">
+              <label for="mail">Email: </label>
+              <input type="email" id="mail" placeholder="Ingrese su Email">  
             </fieldset>
             <fieldset class="d-flex">
               <label for="password">Contraseña: </label>
               <input type="text" id="password" placeholder="Ingrese su contraseña">
             </fieldset>
             <div class="d-flex align-items-center my-4">
-              <button class="mb-2 me-3" type="submit">Ingresar</button>
-              <input class="mb-0" type="checkbox" name="recordar" id="recordar">
-              <p class="mb-0 ms-2">Recordarme</p>
+              <button class="mb-2 me-3" type="submit">Registrarse</button>
             </div>
-            <a href=""><small>¿Olvidaste tu contraseña?</small></a>
             <div>
-              <small class="me-2">¿No tienes cuenta?</small><a href="">Registrate</a>
+              <small class="me-2">¿Ya tienes cuenta?</small><a href="./sesion.html">Iniciar Sesion</a>
             </div>
         </form>
       </section>
-        
+      <section class="loginImg">
+        <img src="../assets/fondo.png" alt="">
+      </section>
 
     </main>
 
@@ -109,7 +114,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 3" viewBox="0 0 24 24" id="location"><path d="M12,2a8.009,8.009,0,0,0-8,8c0,3.255,2.363,5.958,4.866,8.819,0.792,0.906,1.612,1.843,2.342,2.791a1,1,0,0,0,1.584,0c0.73-.948,1.55-1.885,2.342-2.791C17.637,15.958,20,13.255,20,10A8.009,8.009,0,0,0,12,2Zm0,11a3,3,0,1,1,3-3A3,3,0,0,1,12,13Z"></path></svg>
         San Francisco del chañar, Córdoba
       </a>
-      <a href="">
+      <a href="https://wa.me/5493513945187" target="_blank">
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" id="phone">
           <path d="M13.216 8.064c-.382-4.394-4.966-6.55-5.16-6.638a.974.974 0 0 0-.582-.078c-5.292.878-6.088 3.958-6.12 4.086a.99.99 0 0 0 .02.54c6.312 19.584 19.43 23.214 23.742 24.408.332.092.606.166.814.234a.99.99 0 0 0 .722-.042c.132-.06 3.248-1.528 4.01-6.316a.997.997 0 0 0-.096-.612c-.068-.132-1.698-3.234-6.218-4.33a.977.977 0 0 0-.884.21c-1.426 1.218-3.396 2.516-4.246 2.65-5.698-2.786-8.88-8.132-9-9.146-.07-.57 1.236-2.572 2.738-4.2a.998.998 0 0 0 .26-.766z"></path>
         </svg>
@@ -132,3 +137,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="../js/script.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+</html>

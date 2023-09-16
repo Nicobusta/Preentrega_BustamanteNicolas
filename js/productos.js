@@ -17,7 +17,7 @@ const llenarMain=(arr)=>{
 
 /************  buscador de productos ***************/
 const buscador=document.getElementById("buscador");
-
+const btnVerMas = document.getElementById("ver__mas");
 function filtrarproducto(arr, filtro) {
 
     const filtroEnMinusculas = filtro.toLowerCase();
@@ -39,6 +39,14 @@ const removerMostrar=()=>{
     sessionStorage.removeItem("mostrar");
 }
 
+const verMas=()=>{
+  main__productos.innerHTML += `
+        <section class="ver__mas col-12 text-center">
+          <a href="../pages/productos.html" class="ver__mas">Ver todos</a>
+        </section>
+        `;
+}
+
 let mostrar=getMostrarSS();
 
 fetch('../bd/data.json')
@@ -49,12 +57,16 @@ fetch('../bd/data.json')
 
     switch (mostrar) {
       case "almohadones":
+        verMas();
         productos = almohadones;
+
         break;
       case "contenedores":
+        verMas();
         productos = contenedores;
         break;
       case "macetas":
+        verMas();
         productos = macetas;
         break;
       default:
@@ -62,8 +74,9 @@ fetch('../bd/data.json')
         break;
     }
 
+    
     llenarMain(productos);
-
+    
 /* ***********filtrado de productos mostrados *************/
     buscador.addEventListener("input", (e) => {
     
@@ -73,7 +86,8 @@ fetch('../bd/data.json')
     
         filtrado.length === 0 ? main__productos.innerHTML = `<h2>No se encontraron productos</h2>` : llenarMain(filtrado);
     })
-    
+
+
   })
   .then(() => {
     removerMostrar();
@@ -84,3 +98,4 @@ search.addEventListener("click",()=>{
     const visible=buscador.style.display;
     visible==="block" ? buscador.style.display="none" : buscador.style.display="block";
 })
+

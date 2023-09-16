@@ -50,6 +50,7 @@ h1{
 .nav__principal {
     
     background-color: $colorPrimario;
+    
     img{
         width: 3rem;
         height: auto;
@@ -60,6 +61,25 @@ h1{
     }
     
     a {
+        position: relative;
+        .icon__nav__carrito{
+            position: absolute;
+            top: -0.5rem;
+            right: 0;
+            width: 1.2rem;
+            height: 1.2rem;
+            border-radius: 50%;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            span{
+                color: white;
+                text-decoration: none;
+                font-size: 15px;
+            }
+
+        }
         &:hover{
             fill: $colorFontSecundario;
         }
@@ -121,6 +141,20 @@ footer{
 
 #main__productos{
     margin-top: 4.5rem;
+
+    .ver__mas{
+        margin-top: 1rem;
+        a{
+            background-color: $colorPrimario;
+            border: none;
+            border-radius: 5px;
+            color: $colorFont;
+            
+            padding: 0.5rem 1rem;
+            color: white;
+            text-decoration: none;
+        }
+    }
         
         img{
             

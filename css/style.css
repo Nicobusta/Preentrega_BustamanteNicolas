@@ -48,6 +48,26 @@ h1 {
 .nav__principal li a {
   color: #fff;
 }
+.nav__principal a {
+  position: relative;
+}
+.nav__principal a .icon__nav__carrito {
+  position: absolute;
+  top: -0.5rem;
+  right: 0;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav__principal a .icon__nav__carrito span {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
 .nav__principal a:hover {
   fill: #000;
 }
@@ -98,6 +118,18 @@ footer small {
 
 #main__productos {
   margin-top: 4.5rem;
+}
+#main__productos .ver__mas {
+  margin-top: 1rem;
+}
+#main__productos .ver__mas a {
+  background-color: #8B583B;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  color: white;
+  text-decoration: none;
 }
 #main__productos img {
   width: 100%;
